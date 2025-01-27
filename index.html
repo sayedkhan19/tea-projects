@@ -18,26 +18,19 @@
     ></script>
     <!-- tailwindcss -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: '#da373d',
-            }
-            
-          }
-        }
+    <style>
+      .font-Manrope{
+        font-family: "Manrope", serif;
       }
-    </script>
+    </style>
   </head>
-  <body>
+  <body class="font-Manrope">
     <!-- content -->
     <main class="max-w-screen-xl px-16 mx-auto lg:px-20">
       <!-- header section -->
       <header class="mb-20 lg:flex lg:pt-12 lg:mb-5 space-y-7">
         <!-- text left content -->
-        <div>
+        <div class="space-y-3">
           <h1 class="text-5xl md:text-7xl">
             It's good<br />
             tea time at The <br />
@@ -48,7 +41,7 @@
             Your Taste Buds.
           </p>
           <button
-            class="px-5 py-3 font-bold text-white rounded-lg bg-gradient-to-r from-orange-500 to-red-500"
+            class="px-5 py-3 font-bold text-white rounded-lg cursor-pointer bg-gradient-to-r from-orange-500 to-red-500"
           >
             Explore More <i class="-rotate-45 fa-solid fa-arrow-right"></i>
           </button>
@@ -130,7 +123,7 @@
         </div>
       </section>
 
-      <!-- great rea sectioon -->
+      <!-- great tea sectioon -->
       <section class="mb-24">
         <div class="grid grid-cols-1 lg:grid-cols-2">
           <!-- img section -->
@@ -142,12 +135,12 @@
               <img class="mx-auto my-5" src="images/fresh-1.png" alt="" />
             </div>
 
-            <div class="row-span-2 bg-orange-50 rounded-xl">
+            <div class="row-span-2 bg-slate-300 rounded-xl">
               <img class="mx-auto my-5" src="images/fresh-2.png" alt="" />
             </div>
 
             <div
-              class="h-38 bg-gradient-to-r from-red-100 to-red-50 rounded-xl"
+              class="h-38 bg-gradient-to-r from-slate-100 to-slate-400 rounded-xl"
             ></div>
           </div>
 
@@ -305,20 +298,22 @@
     </main>
 
 
-    <footer class="bg-[#FFE7E6] w-full pb-8">
+    <footer class="bg-[#FFE7E6] w-full pb-8 lg:p-14 xl:p-16">
       <div class="flex-col justify-center max-w-screen-xl px-16 mx-auto space-y-5 text-center lg:px-20 lg:p-20 md:flex md:text-center">
         <!-- top div -->
-         <div class=" lg:flex lg:justify-between md:justify-between">
-          <img class="" src="images/cup.png" alt="">
-          <div class="items-center gap-4 space-y-3 lg:flex md:flex">
-            <h3 class="text-gray-600">Ready to get strated?</h3>
-            <button class="p-5 font-bold text-white rounded-md cursor-pointer bg-gradient-to-r from-orange-500 to-red-500">Get Started</button>
-          </div>
-         </div>
+         
+          <div class="justify-between lg:flex md:justify-between">
+            <img class="" src="images/cup.png" alt="">
+            <div class="items-center gap-4 space-y-3 lg:flex md:flex">
+              <h3 class="text-gray-600">Ready to get strated?</h3>
+              <button class="p-5 font-bold text-white rounded-md cursor-pointer bg-gradient-to-r from-orange-500 to-red-500">Get Started</button>
+            </div>
+           </div>
+         
 
 
          <!-- middle div -->
-          <div class="grid lg:grid-cols-4 md:grid-cols-2 md:mx-auto">
+          <div class="grid lg:grid-cols-4 md:grid-cols-2">
             <!-- m1 -->
              <div class="grid grid-cols-1 text-left space-y-s mt-7">
               <h2 class="text-2xl font-bold">Quick Links</h2>
@@ -351,18 +346,18 @@
                   <h2 class="text-2xl font-bold">Subscribe to our <br> newsletter</h2>
                  
                   <!-- email  -->
-                  <div>
-                    <label for="">
+                  <div class="xl:space-y-4">
+                    
                       <input class="px-5 py-3 border-b-1" type="text" placeholder="Email">
-                      <button class="p-2 pb-2 text-4xl font-bold text-center text-white bg-orange-500 rounded-full">
+                      <button class="p-2 pb-2 text-2xl font-bold text-center text-white bg-orange-500 rounded-full xl:mt-4 ">
                       >
                       </button>
-                    </label>
+                    
                     
                   </div>
                   
                   <!-- div social icons -->
-                  <div class="flex gap-7">
+                  <div class="flex space-y-3 gap-7">
                     <a href=""><i class="fa-brands fa-facebook"></i></a>
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
                     <a href=""><i class="fa-brands fa-twitter"></i></a>
@@ -370,7 +365,8 @@
 
                  </div>
           </div>
-      </div>
+</div>
+    
     </footer>
   </body>
 </html>
